@@ -62,6 +62,7 @@ renv::init()
 # You can also clean up a project by removing unused packages using the
 # following command: renv::clean()
   
+  
 # After you have confirmed that your code works as expected, use
 # renv::snapshot() to record the packages and their
 # sources in the lockfile.
@@ -118,6 +119,7 @@ crop_dataset <- read_csv(
   )
 )
 View(crop_dataset)
+
 
 ## STEP 4. Load sample datasets that are provided as part of a package ----
 if (!is.element("mlbench", installed.packages()[, 1])) {
