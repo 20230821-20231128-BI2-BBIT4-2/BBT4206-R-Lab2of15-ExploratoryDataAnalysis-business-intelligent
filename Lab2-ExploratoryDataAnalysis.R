@@ -111,7 +111,7 @@ if (!is.element("readr", installed.packages()[, 1])) {
 }
 require("readr")
 
-crop_dataset <- read_csv(
+student_data <- read_csv(
   "data/crop.data.csv",
   col_types = cols(
     density = col_factor(levels = c("1", "2")),
