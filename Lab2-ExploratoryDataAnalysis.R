@@ -117,6 +117,10 @@ crop_dataset <- read_csv(
     yield = col_double()
   )
 )
+
+library(readr)
+X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset <- read_csv("data/20230412-20230719-BI1-BBIT4-1-StudentPerformanceDataset.csv")
+View(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 View(crop_dataset)
 
 ## STEP 4. Load sample datasets that are provided as part of a package ----
@@ -727,7 +731,7 @@ barplot(table(PimaIndiansDiabetes[, 9]), main = names(PimaIndiansDiabetes)[9])
 # dataset:
 if (!is.element("Amelia", installed.packages()[, 1])) {
   install.packages("Amelia", dependencies = TRUE)
-}
+}f
 require("Amelia")
 
 missmap(BostonHousing, col = c("red", "grey"), legend = TRUE)
