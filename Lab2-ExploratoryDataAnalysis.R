@@ -21,7 +21,7 @@
 # **Initialization: Install and use renv ----
 # The renv package helps you create reproducible environments for your R
 # projects. This is helpful when working in teams because it makes your R
-#  projects more isolated, portable and reproducible.
+#   projects more isolated, portable and reproducible.
 
 # Further reading:
 #   Summary: https://rstudio.github.io/renv/
@@ -120,6 +120,10 @@ crop_dataset <- read_csv(
     yield = col_double()
   )
 )
+
+library(readr)
+X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset <- read_csv("data/20230412-20230719-BI1-BBIT4-1-StudentPerformanceDataset.csv")
+View(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 View(crop_dataset)
 
 
@@ -255,6 +259,7 @@ print(pima_indians_diabetes_mode)
 summary(BostonHousing)
 summary(crop_dataset)
 summary(iris_dataset)
+
 summary(PimaIndiansDiabetes)
 
 ### STEP 10. Measure the standard deviation of each variable ----
@@ -730,7 +735,7 @@ barplot(table(PimaIndiansDiabetes[, 9]), main = names(PimaIndiansDiabetes)[9])
 # dataset:
 if (!is.element("Amelia", installed.packages()[, 1])) {
   install.packages("Amelia", dependencies = TRUE)
-}
+}f
 require("Amelia")
 #comment
 missmap(BostonHousing, col = c("red", "grey"), legend = TRUE)
