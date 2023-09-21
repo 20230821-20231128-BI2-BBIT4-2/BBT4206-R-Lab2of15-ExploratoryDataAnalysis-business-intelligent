@@ -44,7 +44,7 @@ require("renv")
 # 4: Abort project initialization.
 
 # Select option 1 to restore the project from the lockfile
-renv::init()
+#renv::init()
 
 # This will set up a project library, containing all the packages you are
 # currently using. The packages (and all the metadata needed to reinstall
@@ -62,6 +62,8 @@ renv::init()
 
 # You can also clean up a project by removing unused packages using the
 # following command: renv::clean()
+  
+
   
 # After you have confirmed that your code works as expected, use
 # renv::snapshot() to record the packages and their
@@ -119,6 +121,7 @@ crop_dataset <- read_csv(
   )
 )
 View(crop_dataset)
+
 
 ## STEP 4. Load sample datasets that are provided as part of a package ----
 if (!is.element("mlbench", installed.packages()[, 1])) {
