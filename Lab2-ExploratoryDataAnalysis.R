@@ -20,7 +20,7 @@
 # **Initialization: Install and use renv ----
 # The renv package helps you create reproducible environments for your R
 # projects. This is helpful when working in teams because it makes your R
-#  projects more isolated, portable and reproducible.
+#   projects more isolated, portable and reproducible.
 
 # Further reading:
 #   Summary: https://rstudio.github.io/renv/
@@ -251,6 +251,7 @@ print(pima_indians_diabetes_mode)
 summary(BostonHousing)
 summary(crop_dataset)
 summary(iris_dataset)
+
 summary(PimaIndiansDiabetes)
 
 ### STEP 10. Measure the standard deviation of each variable ----
