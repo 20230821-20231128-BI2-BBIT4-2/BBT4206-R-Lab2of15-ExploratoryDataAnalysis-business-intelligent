@@ -101,7 +101,7 @@ iris_dataset <- read.csv("data/iris.data", header = FALSE,
 # iris_dataset:
 
 # names(iris_dataset) <- c("sepal length in cm", "sepal width in cm",
-#                          "petal length in cm", "petal width in cm", "class")
+#                          "petal length in cm", "petal width in cm", "class"),,,,
 
 if (!is.element("readr", installed.packages()[, 1])) {
   install.packages("readr", dependencies = TRUE)
