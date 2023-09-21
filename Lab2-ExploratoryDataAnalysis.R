@@ -8,7 +8,7 @@
 #
 # Lecturer: Allan Omondi
 # Contact: aomondi [at] strathmore.edu
-#
+# Student: Muema Ian
 # Note: The lecture contains both theory and practice. This file forms part of
 #       the practice. It has required lab work submissions that are graded for
 #       coursework marks.
