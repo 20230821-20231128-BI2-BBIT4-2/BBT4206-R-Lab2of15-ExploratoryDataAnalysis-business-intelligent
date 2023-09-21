@@ -43,7 +43,7 @@ require("renv")
 # 4: Abort project initialization.
 
 # Select option 1 to restore the project from the lockfile
-renv::init()
+#renv::init()
 
 # This will set up a project library, containing all the packages you are
 # currently using. The packages (and all the metadata needed to reinstall
