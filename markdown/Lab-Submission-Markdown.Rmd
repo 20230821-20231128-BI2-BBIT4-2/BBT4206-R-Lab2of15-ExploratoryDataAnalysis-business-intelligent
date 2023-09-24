@@ -63,7 +63,7 @@ dim(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 
 ## Data Types
 
-Describe the next code chunk here:
+Knowing the data types will help you to identify the most appropriate,visualization types and algorithms that can be applied. It can also help you to identify the need to convert from categorical data (factors) to integers or vice versa where necessary
 
 ```{r 3rd code}
 
@@ -101,6 +101,25 @@ cbind(frequency = table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset
 
 
 ```
+
+# Measures of central tendency
+
+The following code reveals the most frequently occurring performance level in the dataset. Additionally, it identifies the performance level of students who dropped the Business program based on the dataset.
+
+```{r 12th code}
+student_performance_dataset_mode <- names(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$gender))[
+  which(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$gender) == max(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$gender)))
+]
+print(student_performance_dataset_mode)
+
+student_performance_dataset_mode <- names(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$drop_bi_now))[
+  which(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$drop_bi_now) == max(table(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset$drop_bi_now)))
+]
+print(student_performance_dataset_mode)
+
+```
+
+
 
 ## Measures of Distribution/Dispersion/Spread/Scatter/Variability
 
