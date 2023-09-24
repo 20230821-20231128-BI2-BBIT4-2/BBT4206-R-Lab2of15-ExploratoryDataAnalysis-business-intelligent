@@ -268,4 +268,4 @@ Describe the code chunk here:
 # Fill this with other R related code that will be executed when the R markdown
 ```
 
-**etc.** as per the lab submission requirements. Be neat and communicate in a clear and logical manner.
+
