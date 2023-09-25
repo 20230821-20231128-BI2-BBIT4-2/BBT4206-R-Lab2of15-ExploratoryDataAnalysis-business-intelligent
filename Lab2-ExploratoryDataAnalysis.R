@@ -1,5 +1,6 @@
 # *****************************************************************************
 # Lab 2: Exploratory Data Analysis ----
+# Hakeem Alavi is editing
 #
 # Course Code: BBT4206
 # Course Name: Business Intelligence II
@@ -7,7 +8,7 @@
 #
 # Lecturer: Allan Omondi
 # Contact: aomondi [at] strathmore.edu
-#
+# Student: Muema Ian
 # Note: The lecture contains both theory and practice. This file forms part of
 #       the practice. It has required lab work submissions that are graded for
 #       coursework marks.
@@ -43,7 +44,7 @@ require("renv")
 # 4: Abort project initialization.
 
 # Select option 1 to restore the project from the lockfile
-renv::init()
+#renv::init()
 
 # This will set up a project library, containing all the packages you are
 # currently using. The packages (and all the metadata needed to reinstall
@@ -61,6 +62,8 @@ renv::init()
 
 # You can also clean up a project by removing unused packages using the
 # following command: renv::clean()
+  
+
   
 # After you have confirmed that your code works as expected, use
 # renv::snapshot() to record the packages and their
@@ -108,7 +111,7 @@ if (!is.element("readr", installed.packages()[, 1])) {
 }
 require("readr")
 
-crop_dataset <- read_csv(
+student_data <- read_csv(
   "data/crop.data.csv",
   col_types = cols(
     density = col_factor(levels = c("1", "2")),
@@ -122,6 +125,7 @@ library(readr)
 X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset <- read_csv("data/20230412-20230719-BI1-BBIT4-1-StudentPerformanceDataset.csv")
 View(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 View(crop_dataset)
+
 
 ## STEP 4. Load sample datasets that are provided as part of a package ----
 if (!is.element("mlbench", installed.packages()[, 1])) {
@@ -733,7 +737,7 @@ if (!is.element("Amelia", installed.packages()[, 1])) {
   install.packages("Amelia", dependencies = TRUE)
 }f
 require("Amelia")
-
+#comment
 missmap(BostonHousing, col = c("red", "grey"), legend = TRUE)
 missmap(crop_dataset, col = c("red", "grey"), legend = TRUE)
 missmap(iris_dataset, col = c("red", "grey"), legend = TRUE)
