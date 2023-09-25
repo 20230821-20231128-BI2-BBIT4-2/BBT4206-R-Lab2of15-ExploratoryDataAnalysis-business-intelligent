@@ -1,3 +1,8 @@
+---
+output: 
+  html_document: 
+    keep_md: yes
+---
 # Business Intelligence Lab Submission Markdown
 
 9/24/2023
@@ -15,7 +20,7 @@
 # Student Details {#student-details}
 
 |                                                   |                                                              |
-|---------------------------------------------------|--------------------------------------------------------------|
+|---------------------------------|---------------------------------------|
 | **Student ID Numbers and Names of Group Members** | 136346,127559,135863,134775,134141                           |
 | **BBIT 4.2 Group**                                | Group C                                                      |
 | **Course Code**                                   | BBT4206                                                      |
@@ -54,8 +59,6 @@ View(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 ```
 
 ## Dimensions
-
-
 
 ```{r 2nd}
 dim(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
