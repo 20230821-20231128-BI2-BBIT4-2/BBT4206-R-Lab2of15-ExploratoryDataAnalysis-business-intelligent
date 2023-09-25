@@ -55,7 +55,7 @@ View(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
 
 ## Dimensions
 
-Describe the next code chunk here:
+
 
 ```{r 2nd code}
 dim(X20230412_20230719_BI1_BBIT4_1_StudentPerformanceDataset)
